@@ -1,0 +1,28 @@
+:global(.inspiration-section) {
+  overflow: hidden;
+}
+
+:global(.inspiration-section__background) {
+  height: 110%;
+  inset: 0 0 auto;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  transform-origin: center center;
+  transform: translateY(0) scale(1.1);
+  will-change: transform;
+  transition: transform 5s linear;
+}
+
+:global(.inspiration-section__background--animate) {
+  transform: translateY(-9%) scale(1.1);
+}
+
+:global(.inspiration-section__shade) {
+  background: rgb(0 0 0 / 28%);
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}

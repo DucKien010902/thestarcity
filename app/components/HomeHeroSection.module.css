@@ -1,0 +1,114 @@
+:global(.hero-section) {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: var(--header-height) 24px clamp(68px, 10vh, 102px);
+}
+
+:global(.hero-section__background) {
+  height: 110%;
+  inset: 0 0 auto;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  transform-origin: center center;
+  transform: translateY(0) scale(1.1);
+  will-change: transform;
+  transition: transform 5s linear;
+}
+
+:global(.hero-section__background--animate) {
+  transform: translateY(-9%) scale(1.1);
+}
+
+:global(.hero-section__shade) {
+  background:
+    linear-gradient(180deg, rgb(0 0 0 / 34%) 0%, rgb(0 0 0 / 20%) 38%, rgb(0 0 0 / 54%) 100%),
+    linear-gradient(90deg, rgb(0 36 31 / 25%) 0%, transparent 34%, rgb(0 36 31 / 20%) 100%);
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+:global(.hero-section__content) {
+  isolation: isolate;
+  max-width: 980px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 5px 24px rgb(0 0 0 / 45%);
+  z-index: 2;
+}
+
+:global(.hero-section__kicker) {
+  color: #ffffff;
+  font-family: var(--font-cormorant), serif;
+  font-size: clamp(34px, 4.2vw, 62px);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 0.96;
+  margin: 0 0 2px;
+}
+
+:global(.hero-section h1) {
+  background: linear-gradient(90deg, #24cbd9 0%, #f3e536 24%, #ff301f 48%, #8fed82 72%, #ffed36 100%);
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(42px, 5.9vw, 86px);
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+:global(.hero-section__slogan) {
+  color: #ffffff;
+  font-size: clamp(22px, 2.4vw, 36px);
+  font-weight: 800;
+  line-height: 1.14;
+  margin: 10px 0 8px;
+  text-transform: uppercase;
+}
+
+:global(.hero-section__place) {
+  font-size: clamp(16px, 1.5vw, 24px);
+  font-weight: 500;
+  line-height: 1.3;
+  left: calc(clamp(18px, 2.4vw, 40px) + 200px);
+  margin-left: auto;
+  position: relative;
+  width: fit-content;
+  text-align: right;
+}
+
+@media (max-width: 980px) {
+  :global(.hero-section) {
+    align-items: flex-end;
+    padding: var(--header-height) 18px 74px;
+  }
+
+  :global(.hero-section__background) {
+    height: 110%;
+    object-position: center;
+  }
+
+  :global(.hero-section__place) {
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  :global(.hero-section h1) {
+    font-size: 38px;
+  }
+
+  :global(.hero-section__slogan) {
+    font-size: 20px;
+  }
+
+  :global(.hero-section__kicker) {
+    font-size: 34px;
+  }
+}
