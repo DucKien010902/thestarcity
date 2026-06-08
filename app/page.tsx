@@ -6,6 +6,7 @@ import { IntroSection } from "./components/IntroSection";
 import { LocationSection } from "./components/LocationSection";
 import { OverviewSection } from "./components/OverviewSection";
 import { ParkSection } from "./components/ParkSection";
+import { ProductTypesSection } from "./components/ProductTypesSection";
 import { ProjectSection } from "./components/ProjectSection";
 import { SectionPager } from "./components/SectionPager";
 import { ValueSection } from "./components/ValueSection";
@@ -22,6 +23,7 @@ export default function Home() {
       <ValueSection />
       <ParkSection />
       <EcosystemSection />
+      <ProductTypesSection />
       <ContactFooterSection />
     </SectionPager>
   );

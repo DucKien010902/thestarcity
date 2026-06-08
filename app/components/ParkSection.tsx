@@ -78,7 +78,7 @@ const parkCategories: ParkCategory[] = [
   },
 ];
 
-const AUTOPLAY_DELAY = 4200;
+const AUTOPLAY_DELAY = 6000;
 
 type ParkSectionProps = {
   isActive?: boolean;
@@ -86,8 +86,10 @@ type ParkSectionProps = {
 
 export function ParkSection({ isActive = false }: ParkSectionProps) {
   const [animate, setAnimate] = useState(false);
+
   const [activeCategoryId, setActiveCategoryId] =
     useState<ParkCategory["id"]>("park-ecosystem");
+
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   const activeCategory = useMemo(
@@ -221,12 +223,11 @@ export function ParkSection({ isActive = false }: ParkSectionProps) {
             aria-label="Ảnh trước"
             onClick={() => goToSlide(activeSlideIndex - 1)}
           >
-            ‹
+            <span className="park-section__navArrow park-section__navArrow--prev" />
           </button>
 
           <span className="park-section__counter">
-            {String(activeSlideIndex + 1).padStart(2, "0")}/
-            {String(activeCategory.slides.length).padStart(2, "0")}
+            {activeSlideIndex + 1}/{activeCategory.slides.length}
           </span>
 
           <button
@@ -235,7 +236,7 @@ export function ParkSection({ isActive = false }: ParkSectionProps) {
             aria-label="Ảnh tiếp theo"
             onClick={() => goToSlide(activeSlideIndex + 1)}
           >
-            ›
+            <span className="park-section__navArrow" />
           </button>
         </div>
 

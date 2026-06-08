@@ -56,6 +56,14 @@ export function ContactFooterSection({
       data-section
     >
       <div className="contact-footer__paint" aria-hidden="true" />
+      <span
+        className="contact-footer__firework contact-footer__firework--left"
+        aria-hidden="true"
+      />
+      <span
+        className="contact-footer__firework contact-footer__firework--right"
+        aria-hidden="true"
+      />
 
       <div className="contact-footer__shell">
         <div className="contact-footer__left">
