@@ -17,7 +17,7 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: "The Star City | Bắt Động Sản Hưng Yên",
-  icons: "logo.png",
+  icons: "Logo2.png",
   description:
     "The Star City - khu do thi trung tam tai Bac Dong Quan, Hung Yen.",
 };

@@ -97,9 +97,7 @@ export function OverviewSection({ isActive = false }: OverviewSectionProps) {
         style={visualStyle}
       >
         <div className="overview-section__visual-overlay" />
-        <div className="overview-section__visual-copy">
-          <span>Phối cảnh minh họa</span>
-        </div>
+        
       </div>
     </section>
   );

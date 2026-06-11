@@ -126,7 +126,7 @@ export function ContactFooterSection({
 
       <div className="contact-footer__bottom">
         <p>Một sản phẩm của Hưng Thái Property.</p>
-        <p>© 2024 The Star City. All Rights Reserved.</p>
+        <p>© 2026 The Star City. All Rights Reserved.</p>
       </div>
     </section>
   );

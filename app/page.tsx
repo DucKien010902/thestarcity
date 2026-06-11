@@ -4,6 +4,7 @@ import { EcosystemSection } from "./components/EcosystemSection";
 import { InspirationSection } from "./components/InspirationSection";
 import { IntroSection } from "./components/IntroSection";
 import { LocationSection } from "./components/LocationSection";
+import { NewsSection } from "./components/NewsSection";
 import { OverviewSection } from "./components/OverviewSection";
 import { ParkSection } from "./components/ParkSection";
 import { ProductTypesSection } from "./components/ProductTypesSection";
@@ -24,6 +25,7 @@ export default function Home() {
       <ParkSection />
       <EcosystemSection />
       <ProductTypesSection />
+      <NewsSection />
       <ContactFooterSection />
     </SectionPager>
   );

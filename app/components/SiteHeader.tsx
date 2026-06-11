@@ -10,9 +10,9 @@ const menuItems = [
   { id: "tong-quan", label: "Tổng quan" },
   { id: "du-an", label: "Tổng mặt bằng" },
   { id: "vi-tri", label: "Vị trí" },
-  { id: "thanh-phan-du-an", label: "Giá trị đầu tư" },
+  { id: "gia-tri", label: "Giá trị đầu tư" },
   { id: "tien-ich-cong-vien", label: "Tiện ích công viên" },
-  { id: "tien-ich-he-sinh-thai", label: "Hệ sinh thái" },
+  { id: "he-sinh-thai", label: "Hệ sinh thái" },
   { id: "loai-hinh-san-pham", label: "Loại hình sản phẩm" },
   { id: "cao-tang", label: "Cao tầng" },
   { id: "tin-tuc", label: "Tin tức" },
@@ -27,7 +27,7 @@ function BrandLogo({ compact = false }: { compact?: boolean }) {
     >
       <Image
         className="brand-logo__image"
-        src="/logo.png"
+        src="/Logo2.png"
         alt="The Star City"
         width={184}
         height={110}
